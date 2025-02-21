@@ -38,7 +38,7 @@ const generateImageData = async () => {
   }
 
 
-  fs.writeFile("unsplashImages.json", JSON.stringify(images, null, 2), (err) => {
+  fs.writeFile("unsplashImages.json", JSON.stringify(images), (err) => {
     if (err) {
       console.error("Error writing JSON file:", err);
     } else {
